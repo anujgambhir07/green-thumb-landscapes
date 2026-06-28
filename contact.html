@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Get a free, no-pressure quote from Green Thumb Landscapes."/>
+<title>Contact — Green Thumb Landscapes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body data-page="contact">
+
+<section class="phero" style="padding-bottom:3.5rem">
+  <div class="phero__media"><img src="images/proj-5.jpg" alt="" data-parallax="0.12"/></div>
+  <div class="container phero__inner">
+    <p class="crumbs" data-reveal="up"><a href="index.html">Home</a> / Contact</p>
+    <h1 class="kinetic">Let's talk</h1>
+    <p data-reveal="up" data-delay="300">Tell us about your space and we'll come back within one business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact">
+    <div class="contact__copy">
+      <span class="eyebrow" data-reveal="up">Get a free quote</span>
+      <h2 class="section__title" data-reveal="up" style="text-align:left">Ready to love your garden again?</h2>
+      <p class="section__sub" data-reveal="up" style="text-align:left">No pressure, no obligation — just a friendly conversation about what's possible.</p>
+      <ul class="contact__list">
+        <li data-reveal="left">📞 <a href="tel:+10000000000">(000) 000-0000</a></li>
+        <li data-reveal="left">✉️ <a href="mailto:hello@greenthumb.example">hello@greenthumb.example</a></li>
+        <li data-reveal="left">📍 Serving [Your Region] &amp; surrounds</li>
+        <li data-reveal="left">🕒 Mon–Sat · 7am – 6pm</li>
+      </ul>
+      <div class="map-embed" data-reveal="up">
+        <iframe title="Service area map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.16%2C51.49%2C-0.07%2C51.53&amp;layer=mapnik"></iframe>
+      </div>
+    </div>
+
+    <form class="form" id="contactForm" data-reveal="right" novalidate>
+      <div class="field"><input type="text" id="name" name="name" required placeholder=" "/><label for="name">Your name</label></div>
+      <div class="field-row">
+        <div class="field"><input type="email" id="email" name="email" required placeholder=" "/><label for="email">Email</label></div>
+        <div class="field"><input type="tel" id="phone" name="phone" placeholder=" "/><label for="phone">Phone (optional)</label></div>
+      </div>
+      <div class="field">
+        <select id="service" name="service">
+          <option value="">What do you need?</option>
+          <option>Garden Design</option><option>Paving &amp; Patios</option><option>Lawns &amp; Turf</option>
+          <option>Planting</option><option>Retaining Walls</option><option>Maintenance</option><option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field"><textarea id="message" name="message" rows="4" required placeholder=" "></textarea><label for="message">Tell us about your project</label></div>
+      <button type="submit" class="btn btn--lg btn--block" id="submitBtn" data-magnetic>Send my enquiry</button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      <p style="font-size:.78rem;color:var(--muted);text-align:center">This is a demo form for the sample — submissions aren't stored.</p>
+    </form>
+  </div>
+</section>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
